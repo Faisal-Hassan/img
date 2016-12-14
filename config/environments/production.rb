@@ -11,7 +11,7 @@ Rails.application.configure do
   config.eager_load = true
   config.action_mailer.delivery_method = :smtp
   
-  config.action_mailer.default_url_options = { host: 'limitless-falls-97301.herokuapp.com', :protocol => 'https' }
+  config.action_mailer.default_url_options = { host: 'imghunt.herokuapp.com/', :protocol => 'https' }
 
 
 
