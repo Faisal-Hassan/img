@@ -1,2 +1,41 @@
-<h1>IMG</h1>
-<p>Sample app to test out rails features</p>
+<% if current_user %>
+  <h3 class="text-center">Welcome: <%= current_user.email %></h3>
+<% else %>
+<div class="jumbotron">
+  <h2 class="text-center">Welcome to IMG</h2>
+  <p class="lead">
+    Manage your photos with IMG. Sign up now!
+  </p>
+</div>
+<div class="row">
+  <div class="plans clearfix">
+    <div class="col-lg-4 col-lg-offset-3 plan">
+      <h2>Premium Plan</h2>
+      <div class="features">
+        <ul>
+          <li>Unlimited image uploads</li>
+          <li>Access anywhere</li>
+          <li>Price: $10</li>
+        </ul>
+      </div>
+      <p>
+        <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary sign-up' %>
+      </p>
+    </div>
+    <div class="col-lg-4 plan">
+      <h2>Amaze Plan</h2>
+      <div class="features">
+        <ul>
+          <li>Unlimited image uploads & projects</li>
+          <li>Access anywhere</li>
+          <li>Price: $20</li>
+        </ul>
+      </div>
+      <p>
+        <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary sign-up' %>
+      </p>
+    </div>
+  </div>
+</div>
+
+<% end %>
