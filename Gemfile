@@ -19,6 +19,11 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 # Devise for authentication
 gem 'devise', '~> 4.2'
+# Carrierwave fr image uploads
+gem 'carrierwave', '~> 1.0'
+#Mini Magick for image edits
+gem 'mini_magick', '~> 4.5', '>= 4.5.1'
+gem 'fog', '~> 1.38'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
